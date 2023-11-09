@@ -1,6 +1,6 @@
 {
   "name": "kick.com-api",
-  "version": "0.1.51",
+  "version": "0.1.52",
   "description": "An advanced kick.com API wrapper that allows via CLI or directly via API",
   "main": "./src/index.js",
   "bin": {
@@ -29,6 +29,9 @@
   "author": "Bankk",
   "license": "MIT",
   "dependencies": {
+    "chalk": "^4.1.0",
+    "commander": "^11.1.0",
+    "ora": "^4.0.3",
     "puppeteer": "^21.5.0"
   },
   "devDependencies": {

@@ -12,6 +12,25 @@ npm install kick.com-api
 
 ## Usage
 
+Here's an example of what the code inside your API route file might look like:
+
+```javascript
+// pages/api/channel.js
+import { KickApiWrapper } from 'kick.com-api';
+
+export default async function handler(req, res) {
+  const kickApi = new KickApiWrapper(); // or use 'v1' if you want the version 1 of the API
+
+  try {
+    // Fetch all data for the channel 'adinross' using v2
+    const data = await kickApi.fetchChannelData('adinross');
+    res.status(200).json(data);
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+}
+```
+
 ### Module Usage
 
 Create an instance of `KickApiWrapper` with an optional API version argument ('v1' or 'v2'). If no version is specified, 'v2' is used by default.
@@ -105,58 +124,105 @@ kickApi.fetchChannelData('adinross', ['is_live'])
 
 ### CLI Usage
 
-The package includes a CLI tool for fetching channel data. You can specify the API version with `-v1` or `-v2` flags. If no version is specified, `v2` is used by default.
+The `kick-fetch` CLI tool is part of the kick.com-api package, which provides a command-line interface to fetch channel data from the kick.com API. It supports various options for flexible data retrieval.
+
+#### Installation
+
+Install globally with npm:
 
 ```shell
-# Install globally with npm
 npm install -g kick.com-api
-
-# Use the CLI tool without specifying a version (defaults to v2)
-kick-fetch adinross
-
-# Use the CLI tool with v1
-kick-fetch -v1 adinross
-
-# Use the CLI tool with v2 explicitly
-kick-fetch -v2 adinross
-
-# Fetch specific fields without specifying a version (defaults to v2)
-kick-fetch adinross id followers_count subscription_enabled
-
-# Fetch specific fields with v1
-kick-fetch -v1 adinross id followers_count subscription_enabled
-
-# Fetch specific fields with v2 explicitly
-kick-fetch -v2 adinross id followers_count subscription_enabled
 ```
 
-## NPX Methods
+#### Basic Usage
 
-For those who prefer not to install the CLI tool globally or are using temporary environments, `npx` can be used to run the tool directly without a global installation.
+Fetch all data for a specific channel with the default settings (API version 2):
 
 ```shell
-# Use the npx command without specifying a version (defaults to v2)
-npx kick.com-api kick-fetch adinross
-
-# Use the npx command with v1
-npx kick.com-api kick-fetch -v1 adinross
-
-# Use the npx command with v2 explicitly
-npx kick.com-api kick-fetch -v2 adinross
-
-# Fetch specific fields using npx without specifying a version (defaults to v2)
-npx kick.com-api kick-fetch adinross id followers_count subscription_enabled
-
-# Fetch specific fields using npx with v1
-npx kick.com-api kick-fetch -v1 adinross id followers_count subscription_enabled
-
-# Fetch specific fields using npx with v2 explicitly
-npx kick.com-api kick-fetch -v2 adinross id followers_count subscription_enabled
+kick-fetch <username>
 ```
 
-### Methods
+#### Specifying API Version
 
-#### fetchChannelData(username, [fields], [version])
+Use the `-v1` or `-v2` flags to specify the API version. If no version is specified, `v2` is used by default:
+
+```shell
+kick-fetch -v1 <username>
+kick-fetch -v2 <username>  # Same as default behavior
+```
+
+#### Fetching Specific Fields
+
+To fetch specific fields, list them after the username:
+
+```shell
+kick-fetch <username> id followers_count subscription_enabled
+```
+
+#### Output Options
+
+Control the output format with the `-o` or `--output` flag:
+
+```shell
+kick-fetch <username> -o json  # Outputs in JSON format
+kick-fetch <username> -o text  # Outputs in plain text
+```
+
+#### Pretty Printing
+
+Pretty print JSON output by using the `-p` or `--pretty` flag:
+
+```shell
+kick-fetch <username> -p  # Pretty prints the JSON output
+```
+
+#### Saving Output to a File
+
+Use the `-f` or `--file` flag to save the output to a specified file:
+
+```shell
+kick-fetch <username> -f output.json
+```
+
+#### Configuration File
+
+Specify a path to a configuration file with the `-c` or `--config` flag to use predefined settings:
+
+```shell
+kick-fetch -c path/to/kick.config.json <username>
+```
+
+### Configuration File Template (kick.config.json)
+
+```json
+{
+  "username": "defaultChannel",
+  "version": "v2",
+  "outputType": "json",
+  "prettyPrint": true,
+  "fields": [
+    "id",
+    "followers_count",
+    "subscription_enabled",
+    "is_live"
+  ],
+  "file": "output.json"
+}
+```
+
+The configuration file allows setting a default username, API version, output type, pretty printing option, specific fields to retrieve, and an output file.
+
+#### NPX Methods
+
+For those who prefer not to install the CLI tool globally or are using temporary environments, `npx` can be used to run the tool directly without a global installation:
+
+```shell
+npx kick.com-api kick-fetch <username>
+```
+
+#### Methods
+
+##### fetchChannelData(username, [fields], [version])
 
 Retrieves channel data for the specified `username`. Optionally pass an array of strings as the second argument to specify which fields to retrieve, and the API version as the third argument.
 
@@ -168,7 +234,7 @@ Parameters:
 Returns:
 - A promise that resolves with the full channel data or a subset based on the specified fields.
 
-## Advanced Usage
+### Advanced Usage
 
 For advanced usage, including error handling and customization options, refer to the module's documentation. You can handle different API versions, set custom user agents, and implement more complex data processing as needed.
 
