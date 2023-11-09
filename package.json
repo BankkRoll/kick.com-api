@@ -1,0 +1,30 @@
+{
+  "name": "kick.com-api",
+  "version": "0.1.1",
+  "description": "kick.com API wrapper",
+  "main": "index.js",
+  "bin": {
+    "kick-fetch": "./cli.js"
+  },
+  "scripts": {
+    "format": "prettier --write ./**/*.js",
+    "prepublish": "npm run format"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BankkRoll/kick.com-api.git"
+  },
+  "keywords": [
+    "kick.com",
+    "api",
+    "wrapper"
+  ],
+  "author": "Bankk",
+  "license": "MIT",
+  "dependencies": {
+    "puppeteer": "^13.0.1"
+  },
+  "devDependencies": {
+    "prettier": "^2.7.1"
+  }
+}
