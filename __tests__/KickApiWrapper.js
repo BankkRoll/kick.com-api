@@ -1,25 +1,20 @@
-// __tests__/KickApiWrapper.js
 const puppeteer = require('puppeteer');
 const fs = require('fs');
 const { KickApiWrapper } = require('../src/index');
 const path = require('path');
 
-// Define the output directory and files
 const OUTPUT_DIR = './__tests__';
 const LOGS_FILE = path.join(OUTPUT_DIR, 'logs.txt');
 const RESULTS_FILE = path.join(OUTPUT_DIR, 'test-results.json');
 
-// Ensure the output directory exists
 if (!fs.existsSync(OUTPUT_DIR)) {
   fs.mkdirSync(OUTPUT_DIR);
 }
 
-// Function to remove ANSI escape codes
 const stripAnsi = (str) => {
   return str.replace(/[\u001b\u009b][[()#;?]*(?:[0-9]{1,4}(?:;[0-9]{0,4})*)?[0-9A-ORZcf-nqry=><]/g, '');
 };
 
-// Symbols for logs
 const symbols = {
   pass: '✔️',
   fail: '❌'

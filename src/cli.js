@@ -4,33 +4,56 @@ const { KickApiWrapper } = require('./index');
 async function main() {
   const args = process.argv.slice(2);
 
-  // Variables for username, fields, and API version
   let username,
     fields = [],
     version = 'v2';
 
   function printHelp() {
+    const cyan = '\x1b[36m';
+    const green = '\x1b[32m';
+    const yellow = '\x1b[33m';
+    const reset = '\x1b[0m';
+
     console.log(`
-Usage: kick-fetch [options] [username] [...fields]
-Fetch channel data from kick.com API.
-
-Options:
-  -v1           Use API version 1.
-  -v2           Use API version 2 (default).
-  -h, --help    Show this help message and exit.
-
-You can use the tool in two ways:
-
-1. Install globally using npm:
-   $ npm install -g kick.com-api
-   $ kick-fetch -v2 [username] [...fields]
-
-2. Use directly with npx (without installing):
-   $ npx kick.com-api -v1 [username] [...fields]
-`);
+      ${cyan}┌─────────────────────────────┐
+      │     ${green}kick-fetch CLI${cyan}         │
+      ${cyan}└─────────────────────────────┘
+    
+      ${cyan}┌─ ${yellow}Usage ${cyan}─────────────────────────┐
+      │ ${green}kick-fetch [options]${cyan}         │
+      │ <username> [...fields]       │
+      ${cyan}└─────────────────────────────┘
+      
+      ${cyan}┌─ ${yellow}Options ${cyan}──────────────────────┐
+      │ ${green}-v1${cyan}        Use API version 1       │
+      │ ${green}-v2${cyan}        Use API version 2       │
+      │            (default)            │
+      │ ${green}-h, --help${cyan} Display help        │
+      ${cyan}└─────────────────────────────┘
+      
+      ${cyan}┌─ ${yellow}Examples ${cyan}─────────────────────┐
+      │ 1. Global install:           │
+      │ ${green}$ npm install -g${cyan}             │
+      │   ${green}kick.com-api${cyan}               │
+      │ ${green}$ kick-fetch -v2${cyan}             │
+      │   <username> [...fields]     │
+      │                             │
+      │ 2. Use with npx:             │
+      │ ${green}$ npx kick.com-api -v1${cyan}       │
+      │   <username> [...fields]     │
+      ${cyan}└─────────────────────────────┘
+    
+      ${cyan}┌─ ${yellow}Tips ${cyan}───────────────────────┐
+      │ ${green}* Replace <username>${cyan} with    │
+      │   the actual username.       │
+      │ ${green}* Specify fields for${cyan}         │
+      │   specific data.             │
+      │ ${green}* No fields retrieves all${cyan}    │
+      │   available data.            │
+      ${cyan}└─────────────────────────────┘${reset}
+      `);
   }
 
-  // Check if help is needed or if version is specified
   if (args.includes('-h') || args.includes('--help')) {
     printHelp();
     return;
@@ -44,7 +67,6 @@ You can use the tool in two ways:
     args.splice(args.indexOf('-v2'), 1);
   }
 
-  // Remaining args should be username followed by fields
   [username, ...fields] = args;
 
   if (!username) {
@@ -53,11 +75,9 @@ You can use the tool in two ways:
     process.exit(1);
   }
 
-  // Initialize API wrapper with the specified version
   const kickApi = new KickApiWrapper(version);
 
   try {
-    // Fetch the channel data
     const data = await kickApi.fetchChannelData(
       username,
       fields.length > 0 ? fields : null
