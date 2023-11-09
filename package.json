@@ -1,8 +1,8 @@
 {
   "name": "kick.com-api",
-  "version": "0.1.4",
+  "version": "0.1.51",
   "description": "An advanced kick.com API wrapper that allows via CLI or directly via API",
-  "main": "index.js",
+  "main": "./src/index.js",
   "bin": {
     "kick-fetch": "./src/cli.js"
   },

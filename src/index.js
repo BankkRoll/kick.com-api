@@ -17,7 +17,7 @@ class KickApiWrapper {
 
     try {
       logger.info('Launching browser...');
-      browser = await puppeteer.launch({ headless: true });
+      browser = await puppeteer.launch({ headless: 'new' });
       const page = await browser.newPage();
       logger.info('Browser launched successfully.');
 
