@@ -8,54 +8,53 @@ const logger = {
 };
 
 class KickApiWrapper {
-  constructor(version = 'v2') {
-    this.baseURL = `https://kick.com/api/${version}/channels/`;
+  constructor(options = {}) {
+    this.baseURL = 'https://kick.com/api/';
+    this.internalBaseURL = 'https://kick.com/api/internal/';
+    this.streamBaseURL = 'https://kick.com/stream/featured-livestreams/';
+    this.options = options;
   }
 
-  async fetchChannelData(username, fields = null) {
+  async fetchData(url, fields = null) {
     let browser = null;
 
     try {
-      logger.info('Launching browser...');
-      browser = await puppeteer.launch({ headless: 'new' });
+      logger.info(`Launching browser to fetch data from ${url}...`);
+      const browserOptions = this.options.puppeteer || {};
+      browser = await puppeteer.launch({ headless: 'new', ...browserOptions });
       const page = await browser.newPage();
-      logger.info('Browser launched successfully.');
 
-      await page.setUserAgent(
-        'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3'
-      );
+      const userAgent =
+        this.options.userAgent ||
+        'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3';
+      await page.setUserAgent(userAgent);
 
-      const fullURL = `${this.baseURL}${username}`;
-      logger.info(`Navigating to ${fullURL}`);
-      const response = await page.goto(fullURL, { waitUntil: 'networkidle2' });
+      const response = await page.goto(url, {
+        waitUntil: 'networkidle2',
+        ...this.options.gotoOptions,
+      });
 
       if (response && response.ok()) {
-        logger.success(`Successfully loaded URL: ${fullURL}`);
+        logger.success(`Successfully loaded URL: ${url}`);
         const data = await page.evaluate(() => document.body.textContent);
         const jsonData = JSON.parse(data);
 
         if (fields) {
-          if (Array.isArray(fields)) {
-            return fields.reduce((obj, field) => {
-              obj[field] = jsonData[field];
-              return obj;
-            }, {});
-          } else {
-            return jsonData[fields];
-          }
+          return Array.isArray(fields)
+            ? fields.reduce(
+                (obj, field) => ({ ...obj, [field]: jsonData[field] }),
+                {}
+              )
+            : jsonData[fields];
         }
-
         return jsonData;
       } else {
-        logger.error(
-          `Failed to load URL: ${response?.status()} - ${response?.statusText()}`
-        );
         throw new Error(
           `Failed to load URL: ${response?.status()} - ${response?.statusText()}`
         );
       }
     } catch (error) {
-      logger.error(`Error fetching URL with Puppeteer: ${error}`);
+      logger.error(`Error fetching data: ${error}`);
       throw error;
     } finally {
       if (browser) {
@@ -64,6 +63,46 @@ class KickApiWrapper {
         logger.success('Browser closed.');
       }
     }
+  }
+
+  async fetchChannelData(username, version = 'v2', fields = null) {
+    const url = `${this.baseURL}${version}/channels/${username}`;
+    return this.fetchData(url, fields);
+  }
+
+  async fetchLeaderboards(username, fields = null) {
+    const url = `${this.baseURL}v2/channels/${username}/leaderboards`;
+    return this.fetchData(url, fields);
+  }
+
+  async fetchLiveStreamDetails(username, fields = null) {
+    const url = `${this.baseURL}v2/channels/${username}/livestream`;
+    return this.fetchData(url, fields);
+  }
+
+  async fetchChatroomSettings(username, fields = null) {
+    const url = `${this.internalBaseURL}v1/channels/${username}/chatroom/settings`;
+    return this.fetchData(url, fields);
+  }
+
+  async fetchCategories(fields = null) {
+    const url = `${this.baseURL}v1/categories`;
+    return this.fetchData(url, fields);
+  }
+
+  async fetchSubcategories(fields = null) {
+    const url = `${this.baseURL}v1/subcategories`;
+    return this.fetchData(url, fields);
+  }
+
+  async fetchTopCategories(fields = null) {
+    const url = `${this.baseURL}v1/categories/top`;
+    return this.fetchData(url, fields);
+  }
+
+  async fetchFeaturedLivestreams(region = 'en', fields = null) {
+    const url = `${this.streamBaseURL}${region}`;
+    return this.fetchData(url, fields);
   }
 }
 

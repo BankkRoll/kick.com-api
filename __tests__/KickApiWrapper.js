@@ -61,7 +61,7 @@ describe('KickApiWrapper with real browser', () => {
   });
 
   test('fetchChannelData should retrieve all channel data for a valid username', async () => {
-    const username = 'nickmercs';
+    const username = 'ac7ionman';
     const data = await kickApi.fetchChannelData(username);
     const result = data !== undefined;
     logTestResult(result, 'fetchChannelData with valid username');

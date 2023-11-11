@@ -1,6 +1,6 @@
 {
   "name": "kick.com-api",
-  "version": "0.1.52",
+  "version": "0.1.6",
   "description": "An advanced kick.com API wrapper that allows via CLI or directly via API",
   "main": "./src/index.js",
   "bin": {
@@ -15,6 +15,7 @@
   "engines": {
     "node": ">=14.0.0"
   },
+  "homepage": "https://kickcom-api.vercel.app",
   "repository": {
     "type": "git",
     "url": "https://github.com/BankkRoll/kick.com-api.git"
