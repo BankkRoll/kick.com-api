@@ -1,6 +1,6 @@
 {
   "name": "kick.com-api",
-  "version": "0.1.62",
+  "version": "0.1.63",
   "description": "An advanced kick.com API wrapper that allows via CLI or directly via API",
   "main": "./src/index.js",
   "types": "./src/index.d.ts",

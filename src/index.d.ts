@@ -1,4 +1,4 @@
-import { Browser, LaunchOptions, DirectNavigationOptions } from 'puppeteer';
+import { LaunchOptions } from 'puppeteer';
 
 declare module 'kick.com-api' {
   enum ApiVersion {
@@ -10,8 +10,8 @@ declare module 'kick.com-api' {
     apiVersion?: ApiVersion;
     puppeteer?: LaunchOptions;
     userAgent?: string;
-    gotoOptions?: DirectNavigationOptions;
-    browser?: Browser;
+    gotoOptions?: any;
+    browser?: any;
   }
 
   class KickApiWrapper {
