@@ -13,15 +13,31 @@ class KickApiWrapper {
     this.internalBaseURL = 'https://kick.com/api/internal/';
     this.streamBaseURL = 'https://kick.com/stream/featured-livestreams/';
     this.options = options;
+
+    // Accept an external browser instance
+    this.browser = options.browser;
   }
 
   async fetchData(url, fields = null) {
     let browser = null;
+    let internalBrowser = false;
 
     try {
-      logger.info(`Launching browser to fetch data from ${url}...`);
+      logger.info(`Fetching data from ${url}...`);
       const browserOptions = this.options.puppeteer || {};
-      browser = await puppeteer.launch({ headless: 'new', ...browserOptions });
+
+      if (this.browser) {
+        // Use the external browser instance if provided
+        browser = this.browser;
+      } else {
+        // Launch a new browser instance if not provided
+        browser = await puppeteer.launch({
+          headless: 'new',
+          ...browserOptions,
+        });
+        internalBrowser = true;
+      }
+
       const page = await browser.newPage();
 
       const userAgent =
@@ -57,7 +73,7 @@ class KickApiWrapper {
       logger.error(`Error fetching data: ${error}`);
       throw error;
     } finally {
-      if (browser) {
+      if (browser && internalBrowser) {
         logger.info('Closing browser...');
         await browser.close();
         logger.success('Browser closed.');
