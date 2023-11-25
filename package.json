@@ -1,16 +1,16 @@
 {
   "name": "kick.com-api",
-  "version": "0.1.61",
+  "version": "0.1.62",
   "description": "An advanced kick.com API wrapper that allows via CLI or directly via API",
   "main": "./src/index.js",
+  "types": "./src/index.d.ts",
   "bin": {
     "kick-fetch": "./src/cli.js"
   },
   "scripts": {
     "format": "prettier --write src/**/*.js",
     "test": "jest",
-    "prepublishOnly": "npm run test && npm run format",
-    "start": "node src/index.js"
+    "prepublishOnly": "npm run test && npm run format"
   },
   "engines": {
     "node": ">=14.0.0"

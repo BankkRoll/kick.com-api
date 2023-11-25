@@ -14,7 +14,6 @@ class KickApiWrapper {
     this.streamBaseURL = 'https://kick.com/stream/featured-livestreams/';
     this.options = options;
 
-    // Accept an external browser instance
     this.browser = options.browser;
   }
 
@@ -27,10 +26,8 @@ class KickApiWrapper {
       const browserOptions = this.options.puppeteer || {};
 
       if (this.browser) {
-        // Use the external browser instance if provided
         browser = this.browser;
       } else {
-        // Launch a new browser instance if not provided
         browser = await puppeteer.launch({
           headless: 'new',
           ...browserOptions,
