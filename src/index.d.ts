@@ -13,36 +13,14 @@ declare module 'kick.com-api' {
     constructor(options?: KickApiWrapperOptions);
 
     fetchData<T = any>(url: string, fields?: string[] | null): Promise<T>;
-    fetchChannelData(
-      username: string,
-      version?: string,
-      fields?: string[] | null
-    ): Promise<any>;
-    fetchLeaderboards(
-      username: string,
-      fields?: string[] | null
-    ): Promise<any>;
-    fetchLiveStreamDetails(
-      username: string,
-      fields?: string[] | null
-    ): Promise<any>;
-    fetchChatroomSettings(
-      username: string,
-      fields?: string[] | null
-    ): Promise<any>;
-    fetchCategories(
-      fields?: string[] | null
-    ): Promise<any>;
-    fetchSubcategories(
-      fields?: string[] | null
-    ): Promise<any>;
-    fetchTopCategories(
-      fields?: string[] | null
-    ): Promise<any>;
-    fetchFeaturedLivestreams(
-      region?: string,
-      fields?: string[] | null
-    ): Promise<any>;
+    fetchChannelData(username: string, version?: string, fields?: string[] | null): Promise<any>;
+    fetchLeaderboards(username: string, fields?: string[] | null): Promise<any>;
+    fetchLiveStreamDetails(username: string, fields?: string[] | null): Promise<any>;
+    fetchChatroomSettings(username: string, fields?: string[] | null): Promise<any>;
+    fetchCategories(fields?: string[] | null): Promise<any>;
+    fetchSubcategories(fields?: string[] | null): Promise<any>;
+    fetchTopCategories(fields?: string[] | null): Promise<any>;
+    fetchFeaturedLivestreams(region?: string, fields?: string[] | null): Promise<any>;
   }
 
   export { KickApiWrapper };

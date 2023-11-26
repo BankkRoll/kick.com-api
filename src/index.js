@@ -1,4 +1,5 @@
 const puppeteer = require('puppeteer');
+let chromium;
 
 const logger = {
   success: (message) => console.log(`\x1b[32m${message}\x1b[0m`),
@@ -27,15 +28,25 @@ class KickApiWrapper {
       if (this.browser) {
         browser = this.browser;
       } else {
-        browser = await puppeteer.launch({
-          headless: 'new',
-          ...browserOptions,
-        });
+        const isLambda = !!process.env.AWS_LAMBDA_FUNCTION_VERSION;
+        if (isLambda) {
+          chromium = chromium || require('chrome-aws-lambda');
+          browser = await chromium.puppeteer.launch({
+            args: chromium.args,
+            executablePath: await chromium.executablePath,
+            headless: chromium.headless,
+            ...browserOptions,
+          });
+        } else {
+          browser = await puppeteer.launch({
+            headless: 'new',
+            ...browserOptions,
+          });
+        }
         internalBrowser = true;
       }
 
       const page = await browser.newPage();
-
       const userAgent =
         this.options.userAgent ||
         'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3';
@@ -50,16 +61,12 @@ class KickApiWrapper {
         logger.success(`Successfully loaded URL: ${url}`);
         const data = await page.evaluate(() => document.body.textContent);
         const jsonData = JSON.parse(data);
-
-        if (fields) {
-          return Array.isArray(fields)
-            ? fields.reduce(
-                (obj, field) => ({ ...obj, [field]: jsonData[field] }),
-                {}
-              )
-            : jsonData[fields];
-        }
-        return jsonData;
+        return fields
+          ? fields.reduce(
+              (obj, field) => ({ ...obj, [field]: jsonData[field] }),
+              {}
+            )
+          : jsonData;
       } else {
         throw new Error(
           `Failed to load URL: ${response?.status()} - ${response?.statusText()}`
