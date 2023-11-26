@@ -13,7 +13,6 @@ class KickApiWrapper {
     this.internalBaseURL = 'https://kick.com/api/internal/';
     this.streamBaseURL = 'https://kick.com/stream/featured-livestreams/';
     this.options = options;
-
     this.browser = options.browser;
   }
 

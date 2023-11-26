@@ -68,3 +68,17 @@
 [2023-11-25T21:28:30.385Z] Browser closed.
 [2023-11-25T21:28:30.387Z] ✔️ Test 'fetchChannelData with invalid username' PASSED
 [2023-11-25T21:28:30.447Z] Finished test suite.
+[2023-11-26T02:01:58.464Z] Started test suite.
+[2023-11-26T02:01:58.469Z] Initialized KickApiWrapper.
+[2023-11-26T02:01:58.473Z] Fetching data from https://kick.com/api/v2/channels/ac7ionman...
+[2023-11-26T02:02:00.855Z] Successfully loaded URL: https://kick.com/api/v2/channels/ac7ionman
+[2023-11-26T02:02:00.859Z] Closing browser...
+[2023-11-26T02:02:01.034Z] Browser closed.
+[2023-11-26T02:02:01.035Z] ✔️ Test 'fetchChannelData with valid username' PASSED
+[2023-11-26T02:02:01.038Z] Initialized KickApiWrapper.
+[2023-11-26T02:02:01.042Z] Fetching data from https://kick.com/api/v2/channels/invalidUsername...
+[2023-11-26T02:02:03.384Z] Successfully loaded URL: https://kick.com/api/v2/channels/invalidUsername
+[2023-11-26T02:02:03.387Z] Closing browser...
+[2023-11-26T02:02:03.551Z] Browser closed.
+[2023-11-26T02:02:03.552Z] ✔️ Test 'fetchChannelData with invalid username' PASSED
+[2023-11-26T02:02:03.606Z] Finished test suite.

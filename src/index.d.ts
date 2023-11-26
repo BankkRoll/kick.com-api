@@ -1,13 +1,8 @@
 import { LaunchOptions } from 'puppeteer';
 
 declare module 'kick.com-api' {
-  enum ApiVersion {
-    V1 = 'v1',
-    V2 = 'v2',
-  }
-
   interface KickApiWrapperOptions {
-    apiVersion?: ApiVersion;
+    apiVersion?: string;
     puppeteer?: LaunchOptions;
     userAgent?: string;
     gotoOptions?: any;
@@ -20,7 +15,7 @@ declare module 'kick.com-api' {
     fetchData<T = any>(url: string, fields?: string[] | null): Promise<T>;
     fetchChannelData(
       username: string,
-      version?: ApiVersion,
+      version?: string,
       fields?: string[] | null
     ): Promise<any>;
     fetchLeaderboards(
@@ -50,5 +45,5 @@ declare module 'kick.com-api' {
     ): Promise<any>;
   }
 
-  export { KickApiWrapper, ApiVersion };
+  export { KickApiWrapper };
 }
