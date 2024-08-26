@@ -4,10 +4,10 @@
     "user_id": 1251175,
     "slug": "ac7ionman",
     "is_banned": false,
-    "playback_url": "https://fa723fc1b171.us-west-2.playback.live-video.net/api/video/v1/us-west-2.196233775518.channel.OvjDn5Cxda89.m3u8?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJFUzM4NCJ9.eyJhd3M6Y2hhbm5lbC1hcm4iOiJhcm46YXdzOml2czp1cy13ZXN0LTI6MTk2MjMzNzc1NTE4OmNoYW5uZWwvT3ZqRG41Q3hkYTg5IiwiYXdzOmFjY2Vzcy1jb250cm9sLWFsbG93LW9yaWdpbiI6Imh0dHBzOi8va2ljay5jb20saHR0cHM6Ly9wbGF5ZXIua2ljay5jb20saHR0cHM6Ly9hZG1pbi5raWNrLmNvbSxodHRwczovL3d3dy5nc3RhdGljLmNvbSIsImF3czpzdHJpY3Qtb3JpZ2luLWVuZm9yY2VtZW50IjpmYWxzZSwiZXhwIjoxNzAxMDE1ODY2fQ.tCvbg9t_TfqTiA8FbhNy0fz9ktIqk3I5aWZ8LkUXQ_7nQ71SoB3wR8xK8pZ2IOwdCO_ZIXP5yzHXzdw4TzICkRMOLePmM3cPAWz6-IK32tvpQHab80UQTk1RUshFPFUP",
+    "playback_url": "https://fa723fc1b171.us-west-2.playback.live-video.net/api/video/v1/us-west-2.196233775518.channel.OvjDn5Cxda89.m3u8?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJFUzM4NCJ9.eyJhd3M6Y2hhbm5lbC1hcm4iOiJhcm46YXdzOml2czp1cy13ZXN0LTI6MTk2MjMzNzc1NTE4OmNoYW5uZWwvT3ZqRG41Q3hkYTg5IiwiYXdzOmFjY2Vzcy1jb250cm9sLWFsbG93LW9yaWdpbiI6Imh0dHBzOi8va2ljay5jb20saHR0cHM6Ly93d3cuZ3N0YXRpYy5jb20saHR0cHM6Ly8qLmtpY2subGl2ZSxodHRwczovL3BsYXllci5raWNrLmNvbSxodHRwczovL2FkbWluLmtpY2suY29tLGh0dHBzOi8vYmV0YS5raWNrLmNvbSxodHRwczovL25leHQua2ljay5jb20iLCJhd3M6c3RyaWN0LW9yaWdpbi1lbmZvcmNlbWVudCI6ZmFsc2UsImV4cCI6MTcyNDY5NTc0Nn0.bMV1EDAD5_cxOE74OVHHbAfPADQn-UYGSogSbqqTiK2YOyWCbOyjfoSfz6DxrZuKhRY-RidXT1TgOHcNbIzmmonBQ_NY4B-jQTiLZrnvpnOJzv9vHmHeNKrg9nJWCLw2",
     "vod_enabled": true,
     "subscription_enabled": true,
-    "followers_count": 101409,
+    "followers_count": 141843,
     "subscriber_badges": [
       {
         "id": 5358,
@@ -146,14 +146,59 @@
         "name": "Just Chatting",
         "slug": "just-chatting",
         "tags": [
+          "IRL",
+          "Casual"
+        ],
+        "description": null,
+        "deleted_at": null,
+        "viewers": 49184,
+        "banner": {
+          "responsive": "https://files.kick.com/images/subcategories/15/banner/responsives/b697a8a3-62db-4779-aa76-e4e47662af97___banner_600_800.webp 600w, https://files.kick.com/images/subcategories/15/banner/responsives/b697a8a3-62db-4779-aa76-e4e47662af97___banner_501_668.webp 501w, https://files.kick.com/images/subcategories/15/banner/responsives/b697a8a3-62db-4779-aa76-e4e47662af97___banner_420_560.webp 420w, https://files.kick.com/images/subcategories/15/banner/responsives/b697a8a3-62db-4779-aa76-e4e47662af97___banner_351_468.webp 351w, https://files.kick.com/images/subcategories/15/banner/responsives/b697a8a3-62db-4779-aa76-e4e47662af97___banner_294_392.webp 294w, data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHg9IjAiCiB5PSIwIiB2aWV3Qm94PSIwIDAgNjAwIDgwMCI+Cgk8aW1hZ2Ugd2lkdGg9IjYwMCIgaGVpZ2h0PSI4MDAiIHhsaW5rOmhyZWY9ImRhdGE6aW1hZ2UvanBlZztiYXNlNjQsLzlqLzRBQVFTa1pKUmdBQkFRRUFZQUJnQUFELy9nQTdRMUpGUVZSUFVqb2daMlF0YW5CbFp5QjJNUzR3SUNoMWMybHVaeUJKU2tjZ1NsQkZSeUIyT0RBcExDQnhkV0ZzYVhSNUlEMGdPVEFLLzlzQVF3QURBZ0lEQWdJREF3TURCQU1EQkFVSUJRVUVCQVVLQndjR0NBd0tEQXdMQ2dzTERRNFNFQTBPRVE0TEN4QVdFQkVURkJVVkZRd1BGeGdXRkJnU0ZCVVUvOXNBUXdFREJBUUZCQVVKQlFVSkZBMExEUlFVRkJRVUZCUVVGQlFVRkJRVUZCUVVGQlFVRkJRVUZCUVVGQlFVRkJRVUZCUVVGQlFVRkJRVUZCUVVGQlFVRkJRVS84QUFFUWdBS3dBZ0F3RWlBQUlSQVFNUkFmL0VBQjhBQUFFRkFRRUJBUUVCQUFBQUFBQUFBQUFCQWdNRUJRWUhDQWtLQy8vRUFMVVFBQUlCQXdNQ0JBTUZCUVFFQUFBQmZRRUNBd0FFRVFVU0lURkJCaE5SWVFjaWNSUXlnWkdoQ0NOQ3NjRVZVdEh3SkROaWNvSUpDaFlYR0JrYUpTWW5LQ2txTkRVMk56ZzVPa05FUlVaSFNFbEtVMVJWVmxkWVdWcGpaR1ZtWjJocGFuTjBkWFozZUhsNmc0U0Zob2VJaVlxU2s1U1ZscGVZbVpxaW82U2xwcWVvcWFxeXM3UzF0cmU0dWJyQ3c4VEZ4c2ZJeWNyUzA5VFYxdGZZMmRyaDR1UGs1ZWJuNk9ucThmTHo5UFgyOS9qNSt2L0VBQjhCQUFNQkFRRUJBUUVCQVFFQUFBQUFBQUFCQWdNRUJRWUhDQWtLQy8vRUFMVVJBQUlCQWdRRUF3UUhCUVFFQUFFQ2R3QUJBZ01SQkFVaE1RWVNRVkVIWVhFVElqS0JDQlJDa2FHeHdRa2pNMUx3RldKeTBRb1dKRFRoSmZFWEdCa2FKaWNvS1NvMU5qYzRPVHBEUkVWR1IwaEpTbE5VVlZaWFdGbGFZMlJsWm1kb2FXcHpkSFYyZDNoNWVvS0RoSVdHaDRpSmlwS1RsSldXbDVpWm1xS2pwS1dtcDZpcHFyS3p0TFcydDdpNXVzTER4TVhHeDhqSnl0TFQxTlhXMTlqWjJ1TGo1T1htNStqcDZ2THo5UFgyOS9qNSt2L2FBQXdEQVFBQ0VRTVJBRDhBK1hkZFAyanhMOXBJeHRJTmZXM3daOGF4ZUl0SzAvVDRaVlpvaUFWenpYeVI0cHVvcE5YZHJYbFdyUytGZml6VXZCUGlWTHhXWllBMlN0Y09Kb090QmQwZlU0ZXI3Q2JmUm42Ry9GN3haRjRUK0g5dzF5NFhmRnRVZmhYd0I0ZW1qYnhiSmVTUHRqbGNzSzloK05meHhzL0hmZzFMWmQzbnF1Q0s4UThIVzYzeWg1R3dWUEFOVGhhTWxCdXc2a28xS2l0cVFYbmhLN3RwVWxDbGs3bXVyK0dYaHAvRnV1dlpyRnZLRHBpdERSTmZodXRHbHQ1Z0dsQTRKRmVtZnN3YUJMWWVKYmpVcElNd3VlQ1JYdTFxUzNScmlzUEdNRk9EUEt2aTM0Uy80UkhVN1dDU0x5eEljRVlyaHJtNVhTYjBpM2JDWXpnVjlTZnRUK0d6cnQxRmZKR0VXRVpPSytUNUxWcG5uZHV4eFNveHNqa3BVMzhaNnI0RVh3KytsckxmU2lPWTljbXZidkFmajd3N29kcVlMVzVUSUdRTTE4aFRPeVE0VWtEMnFmdzdQSUw5Y093L0dya3JtMVNrNUxsY2o2dThTL0VMUWZFYnkyMnBYQVJDTVp6WGtIeEgwM3dycGZoNTVOS25XU1pqbmcxNXQ0bG1rKzFmZmI4NnhkU21kNEZWbkpIb1RTZ3JHTHBPQ2RtZi85az0iPgoJPC9pbWFnZT4KPC9zdmc+ 32w",
+          "url": "https://files.kick.com/images/subcategories/15/banner/b697a8a3-62db-4779-aa76-e4e47662af97"
+        },
+        "category": {
+          "id": 2,
+          "name": "IRL",
+          "slug": "irl",
+          "icon": "🎙️"
+        }
+      },
+      {
+        "id": 28,
+        "category_id": 4,
+        "name": "Slots & Casino",
+        "slug": "slots",
+        "tags": [
+          "Gambling"
+        ],
+        "description": null,
+        "deleted_at": null,
+        "viewers": 35221,
+        "banner": {
+          "responsive": "https://files.kick.com/images/subcategories/28/banner/responsives/ca01a05f-f807-4fbf-8794-3d547b1bb7a6___banner_600_800.webp 600w, https://files.kick.com/images/subcategories/28/banner/responsives/ca01a05f-f807-4fbf-8794-3d547b1bb7a6___banner_501_668.webp 501w, https://files.kick.com/images/subcategories/28/banner/responsives/ca01a05f-f807-4fbf-8794-3d547b1bb7a6___banner_420_560.webp 420w, https://files.kick.com/images/subcategories/28/banner/responsives/ca01a05f-f807-4fbf-8794-3d547b1bb7a6___banner_351_468.webp 351w, https://files.kick.com/images/subcategories/28/banner/responsives/ca01a05f-f807-4fbf-8794-3d547b1bb7a6___banner_294_392.webp 294w, https://files.kick.com/images/subcategories/28/banner/responsives/ca01a05f-f807-4fbf-8794-3d547b1bb7a6___banner_245_327.webp 245w, data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHg9IjAiCiB5PSIwIiB2aWV3Qm94PSIwIDAgNjAwIDgwMCI+Cgk8aW1hZ2Ugd2lkdGg9IjYwMCIgaGVpZ2h0PSI4MDAiIHhsaW5rOmhyZWY9ImRhdGE6aW1hZ2UvanBlZztiYXNlNjQsLzlqLzRBQVFTa1pKUmdBQkFRRUFZQUJnQUFELy9nQTdRMUpGUVZSUFVqb2daMlF0YW5CbFp5QjJNUzR3SUNoMWMybHVaeUJKU2tjZ1NsQkZSeUIyT0RBcExDQnhkV0ZzYVhSNUlEMGdPVEFLLzlzQVF3QURBZ0lEQWdJREF3TURCQU1EQkFVSUJRVUVCQVVLQndjR0NBd0tEQXdMQ2dzTERRNFNFQTBPRVE0TEN4QVdFQkVURkJVVkZRd1BGeGdXRkJnU0ZCVVUvOXNBUXdFREJBUUZCQVVKQlFVSkZBMExEUlFVRkJRVUZCUVVGQlFVRkJRVUZCUVVGQlFVRkJRVUZCUVVGQlFVRkJRVUZCUVVGQlFVRkJRVUZCUVVGQlFVRkJRVS84QUFFUWdBS3dBZ0F3RWlBQUlSQVFNUkFmL0VBQjhBQUFFRkFRRUJBUUVCQUFBQUFBQUFBQUFCQWdNRUJRWUhDQWtLQy8vRUFMVVFBQUlCQXdNQ0JBTUZCUVFFQUFBQmZRRUNBd0FFRVFVU0lURkJCaE5SWVFjaWNSUXlnWkdoQ0NOQ3NjRVZVdEh3SkROaWNvSUpDaFlYR0JrYUpTWW5LQ2txTkRVMk56ZzVPa05FUlVaSFNFbEtVMVJWVmxkWVdWcGpaR1ZtWjJocGFuTjBkWFozZUhsNmc0U0Zob2VJaVlxU2s1U1ZscGVZbVpxaW82U2xwcWVvcWFxeXM3UzF0cmU0dWJyQ3c4VEZ4c2ZJeWNyUzA5VFYxdGZZMmRyaDR1UGs1ZWJuNk9ucThmTHo5UFgyOS9qNSt2L0VBQjhCQUFNQkFRRUJBUUVCQVFFQUFBQUFBQUFCQWdNRUJRWUhDQWtLQy8vRUFMVVJBQUlCQWdRRUF3UUhCUVFFQUFFQ2R3QUJBZ01SQkFVaE1RWVNRVkVIWVhFVElqS0JDQlJDa2FHeHdRa2pNMUx3RldKeTBRb1dKRFRoSmZFWEdCa2FKaWNvS1NvMU5qYzRPVHBEUkVWR1IwaEpTbE5VVlZaWFdGbGFZMlJsWm1kb2FXcHpkSFYyZDNoNWVvS0RoSVdHaDRpSmlwS1RsSldXbDVpWm1xS2pwS1dtcDZpcHFyS3p0TFcydDdpNXVzTER4TVhHeDhqSnl0TFQxTlhXMTlqWjJ1TGo1T1htNStqcDZ2THo5UFgyOS9qNSt2L2FBQXdEQVFBQ0VRTVJBRDhBK1JmaGZxSjhMM0c5MTRhdTR0dFpFR3ZmMm9WQlZqMHIwajRSZkF6U1BIZW15enl6Yk5uVEZkbnAvd0N6VnBoMWFTMGt1Q1kxR1JYeHRSNGFYTktTMXRxZlpWUHJGT3FuSGE5ajUxOFIrSXhONGdpMUVSamF2YXVSOGY2bWZGYzZ5b20wS01WOVlhaCt6RnBzK3FyYUpPU0dHUWE0UDRqL0FBSzAvd0FCV0RTR2JjU2NjMTIwc1hScDBsUmgyTjZjNnM1M2wwZGlYOW4zNHgydmdmVFpvTCtGM0RISTRyMFR3LzhBdEZhWmZlTnBwSllpbHFSamtWNXY0UDFUd3o0Z1AyVzBzbGtsVVpPQlhRMnVoNk5KZHZ0MC93QXQxNEp4V2J3ZnRWS1hLMDJqREU0cUVaOHE2TTZUV3YyajlMaDhld0dGQ3RzbkJOZWIvdElmR3V4OFdXVWR0cHlISU9TUlZqeDU0RHQ3L1RubTB5MUMzUFFNSzhtYlRCNFNrWlBFTUFMUHl1YTJwNENNRXFsbmVLMk9DblhsT3JvN0pzNi80RWFGTm9QaUlQS01LM0hOZlRpYU5wY3FGNUhWSGZyaXZIZkRzU1IzOGUxUXZQYXZTWmY5VW4wcm54R1pWS2EwUHVLdVIwYWlVcjdteFBwT2kyOW84YVhIemRlYStXL2ovYXZyZXRxc1B6Um9NQWl2ZWIzby93Qks4bThUeEpKZlB1VU56M3E4SG1OU3UvZVBObGsxT2swMHovL1oiPgoJPC9pbWFnZT4KPC9zdmc+ 32w",
+          "url": "https://files.kick.com/images/subcategories/28/banner/ca01a05f-f807-4fbf-8794-3d547b1bb7a6"
+        },
+        "category": {
+          "id": 4,
+          "name": "Gambling",
+          "slug": "gambling",
+          "icon": "🎰"
+        }
+      },
+      {
+        "id": 8872,
+        "category_id": 2,
+        "name": "Hunger Games",
+        "slug": "hunger-games",
+        "tags": [
           "IRL"
         ],
         "description": null,
         "deleted_at": null,
-        "viewers": 19847,
+        "viewers": 1,
         "banner": {
-          "responsive": "https://files.kick.com/images/subcategories/15/banner/responsives/b697a8a3-62db-4779-aa76-e4e47662af97___banner_600_800.webp 600w, https://files.kick.com/images/subcategories/15/banner/responsives/b697a8a3-62db-4779-aa76-e4e47662af97___banner_501_668.webp 501w, https://files.kick.com/images/subcategories/15/banner/responsives/b697a8a3-62db-4779-aa76-e4e47662af97___banner_420_560.webp 420w, https://files.kick.com/images/subcategories/15/banner/responsives/b697a8a3-62db-4779-aa76-e4e47662af97___banner_351_468.webp 351w, https://files.kick.com/images/subcategories/15/banner/responsives/b697a8a3-62db-4779-aa76-e4e47662af97___banner_294_392.webp 294w, data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHg9IjAiCiB5PSIwIiB2aWV3Qm94PSIwIDAgNjAwIDgwMCI+Cgk8aW1hZ2Ugd2lkdGg9IjYwMCIgaGVpZ2h0PSI4MDAiIHhsaW5rOmhyZWY9ImRhdGE6aW1hZ2UvanBlZztiYXNlNjQsLzlqLzRBQVFTa1pKUmdBQkFRRUFZQUJnQUFELy9nQTdRMUpGUVZSUFVqb2daMlF0YW5CbFp5QjJNUzR3SUNoMWMybHVaeUJKU2tjZ1NsQkZSeUIyT0RBcExDQnhkV0ZzYVhSNUlEMGdPVEFLLzlzQVF3QURBZ0lEQWdJREF3TURCQU1EQkFVSUJRVUVCQVVLQndjR0NBd0tEQXdMQ2dzTERRNFNFQTBPRVE0TEN4QVdFQkVURkJVVkZRd1BGeGdXRkJnU0ZCVVUvOXNBUXdFREJBUUZCQVVKQlFVSkZBMExEUlFVRkJRVUZCUVVGQlFVRkJRVUZCUVVGQlFVRkJRVUZCUVVGQlFVRkJRVUZCUVVGQlFVRkJRVUZCUVVGQlFVRkJRVS84QUFFUWdBS3dBZ0F3RWlBQUlSQVFNUkFmL0VBQjhBQUFFRkFRRUJBUUVCQUFBQUFBQUFBQUFCQWdNRUJRWUhDQWtLQy8vRUFMVVFBQUlCQXdNQ0JBTUZCUVFFQUFBQmZRRUNBd0FFRVFVU0lURkJCaE5SWVFjaWNSUXlnWkdoQ0NOQ3NjRVZVdEh3SkROaWNvSUpDaFlYR0JrYUpTWW5LQ2txTkRVMk56ZzVPa05FUlVaSFNFbEtVMVJWVmxkWVdWcGpaR1ZtWjJocGFuTjBkWFozZUhsNmc0U0Zob2VJaVlxU2s1U1ZscGVZbVpxaW82U2xwcWVvcWFxeXM3UzF0cmU0dWJyQ3c4VEZ4c2ZJeWNyUzA5VFYxdGZZMmRyaDR1UGs1ZWJuNk9ucThmTHo5UFgyOS9qNSt2L0VBQjhCQUFNQkFRRUJBUUVCQVFFQUFBQUFBQUFCQWdNRUJRWUhDQWtLQy8vRUFMVVJBQUlCQWdRRUF3UUhCUVFFQUFFQ2R3QUJBZ01SQkFVaE1RWVNRVkVIWVhFVElqS0JDQlJDa2FHeHdRa2pNMUx3RldKeTBRb1dKRFRoSmZFWEdCa2FKaWNvS1NvMU5qYzRPVHBEUkVWR1IwaEpTbE5VVlZaWFdGbGFZMlJsWm1kb2FXcHpkSFYyZDNoNWVvS0RoSVdHaDRpSmlwS1RsSldXbDVpWm1xS2pwS1dtcDZpcHFyS3p0TFcydDdpNXVzTER4TVhHeDhqSnl0TFQxTlhXMTlqWjJ1TGo1T1htNStqcDZ2THo5UFgyOS9qNSt2L2FBQXdEQVFBQ0VRTVJBRDhBK1hkZFAyanhMOXBJeHRJTmZXM3daOGF4ZUl0SzAvVDRaVlpvaUFWenpYeVI0cHVvcE5YZHJYbFdyUytGZml6VXZCUGlWTHhXWllBMlN0Y09Kb090QmQwZlU0ZXI3Q2JmUm42Ry9GN3haRjRUK0g5dzF5NFhmRnRVZmhYd0I0ZW1qYnhiSmVTUHRqbGNzSzloK05meHhzL0hmZzFMWmQzbnF1Q0s4UThIVzYzeWg1R3dWUEFOVGhhTWxCdXc2a28xS2l0cVFYbmhLN3RwVWxDbGs3bXVyK0dYaHAvRnV1dlpyRnZLRHBpdERSTmZodXRHbHQ1Z0dsQTRKRmVtZnN3YUJMWWVKYmpVcElNd3VlQ1JYdTFxUzNScmlzUEdNRk9EUEt2aTM0Uy80UkhVN1dDU0x5eEljRVlyaHJtNVhTYjBpM2JDWXpnVjlTZnRUK0d6cnQxRmZKR0VXRVpPSytUNUxWcG5uZHV4eFNveHNqa3BVMzhaNnI0RVh3KytsckxmU2lPWTljbXZidkFmajd3N29kcVlMVzVUSUdRTTE4aFRPeVE0VWtEMnFmdzdQSUw5Y093L0dya3JtMVNrNUxsY2o2dThTL0VMUWZFYnkyMnBYQVJDTVp6WGtIeEgwM3dycGZoNTVOS25XU1pqbmcxNXQ0bG1rKzFmZmI4NnhkU21kNEZWbkpIb1RTZ3JHTHBPQ2RtZi85az0iPgoJPC9pbWFnZT4KPC9zdmc+ 32w",
-          "url": "https://files.kick.com/images/subcategories/15/banner/b697a8a3-62db-4779-aa76-e4e47662af97"
+          "responsive": "https://files.kick.com/images/subcategories/8872/banner/responsives/0642d30c-4a5e-41fa-9b2e-8686938ea368___banner_285_381.webp 285w, https://files.kick.com/images/subcategories/8872/banner/responsives/0642d30c-4a5e-41fa-9b2e-8686938ea368___banner_238_318.webp 238w, data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHg9IjAiCiB5PSIwIiB2aWV3Qm94PSIwIDAgMjg1IDM4MSI+Cgk8aW1hZ2Ugd2lkdGg9IjI4NSIgaGVpZ2h0PSIzODEiIHhsaW5rOmhyZWY9ImRhdGE6aW1hZ2UvanBlZztiYXNlNjQsLzlqLzRBQVFTa1pKUmdBQkFRRUFZQUJnQUFELy9nQTdRMUpGUVZSUFVqb2daMlF0YW5CbFp5QjJNUzR3SUNoMWMybHVaeUJKU2tjZ1NsQkZSeUIyT0RBcExDQnhkV0ZzYVhSNUlEMGdPVEFLLzlzQVF3QURBZ0lEQWdJREF3TURCQU1EQkFVSUJRVUVCQVVLQndjR0NBd0tEQXdMQ2dzTERRNFNFQTBPRVE0TEN4QVdFQkVURkJVVkZRd1BGeGdXRkJnU0ZCVVUvOXNBUXdFREJBUUZCQVVKQlFVSkZBMExEUlFVRkJRVUZCUVVGQlFVRkJRVUZCUVVGQlFVRkJRVUZCUVVGQlFVRkJRVUZCUVVGQlFVRkJRVUZCUVVGQlFVRkJRVS84QUFFUWdBS3dBZ0F3RWlBQUlSQVFNUkFmL0VBQjhBQUFFRkFRRUJBUUVCQUFBQUFBQUFBQUFCQWdNRUJRWUhDQWtLQy8vRUFMVVFBQUlCQXdNQ0JBTUZCUVFFQUFBQmZRRUNBd0FFRVFVU0lURkJCaE5SWVFjaWNSUXlnWkdoQ0NOQ3NjRVZVdEh3SkROaWNvSUpDaFlYR0JrYUpTWW5LQ2txTkRVMk56ZzVPa05FUlVaSFNFbEtVMVJWVmxkWVdWcGpaR1ZtWjJocGFuTjBkWFozZUhsNmc0U0Zob2VJaVlxU2s1U1ZscGVZbVpxaW82U2xwcWVvcWFxeXM3UzF0cmU0dWJyQ3c4VEZ4c2ZJeWNyUzA5VFYxdGZZMmRyaDR1UGs1ZWJuNk9ucThmTHo5UFgyOS9qNSt2L0VBQjhCQUFNQkFRRUJBUUVCQVFFQUFBQUFBQUFCQWdNRUJRWUhDQWtLQy8vRUFMVVJBQUlCQWdRRUF3UUhCUVFFQUFFQ2R3QUJBZ01SQkFVaE1RWVNRVkVIWVhFVElqS0JDQlJDa2FHeHdRa2pNMUx3RldKeTBRb1dKRFRoSmZFWEdCa2FKaWNvS1NvMU5qYzRPVHBEUkVWR1IwaEpTbE5VVlZaWFdGbGFZMlJsWm1kb2FXcHpkSFYyZDNoNWVvS0RoSVdHaDRpSmlwS1RsSldXbDVpWm1xS2pwS1dtcDZpcHFyS3p0TFcydDdpNXVzTER4TVhHeDhqSnl0TFQxTlhXMTlqWjJ1TGo1T1htNStqcDZ2THo5UFgyOS9qNSt2L2FBQXdEQVFBQ0VRTVJBRDhBK0ZmQ2N6VzF1V1VFaytsZXFlSHZpYTN3MDBScnBlSjVUeG11YitHdHpvZGdqTHFLQjM3QTF5bnhyMVczbnVZMHRHQWc3S08xZG1taVo0TUtYUExtN24xSjhKZjJ2TGk3dllyVytJTWNoMmcxby9HelZWdk5RZzFGRGxKQnVyNHk4RmE1Qll5Mm0zbWJlSytsdkd1cm0vOEFDbGxJVHlFRlp6VVp6VW94c0ZlSHNWeXQzdWZNbC9QTllTamJuUHRYVStBdkFOdDhTSjVJN3k2RnVWSEc0MTZoby93Q3ZmRnptZUdMS0QyclkwMzltanhEWXpzOWtHaktuK0hpbjdWSGtVY3pVb0tVSW5pMm8vQ0tYd25yWkNUTExFaHlyQTEyOW5xc21vNlVMV1ppMnpnQ3ZUVCt6LzRqdkZQbnNXYnZtcXQxOEV0UThMV3dudVJ3VFcvdG9KV2lqaHhXWXljT2VwSFk5OCtHV25IVHk4VHVJazk2OUZpaHQxSS8weFZKUE9LNGRWRWVkbzIvU2tEc1Q5NC9uWHlzY1UwdFVmejlndU1xMkdwS25LRjdlWjZMTWxsYjIyVXVWZHoxcnpENGxSU1hqUnhSeWI0c2RCVjFwRzZiaitkUnVvays4TjMxb2xpcE5hSXZIY1oxc1ZSZE9NTFg4ei8vMlE9PSI+Cgk8L2ltYWdlPgo8L3N2Zz4= 32w",
+          "url": "https://files.kick.com/images/subcategories/8872/banner/0642d30c-4a5e-41fa-9b2e-8686938ea368"
         },
         "category": {
           "id": 2,
@@ -169,14 +214,14 @@
       "username": "Ac7ionMan",
       "agreed_to_terms": true,
       "email_verified_at": "2023-02-24T23:56:19.000000Z",
-      "bio": "THE BEST",
+      "bio": "THE BEST                                                     business@ac7ionman.com",
       "country": "",
       "state": "",
       "city": "",
       "instagram": "ac7ionman",
       "twitter": "Ac7ionMann",
       "youtube": "",
-      "discord": "https://discord.com/invite/ac7ionman",
+      "discord": "https://discord.gg/ac7ionmannn",
       "tiktok": "",
       "facebook": "",
       "profile_pic": "https://files.kick.com/images/user/1251175/profile_image/conversion/2dd9c51f-b995-4405-90f7-1e32ffcd44c4-fullsize.webp"
@@ -186,15 +231,15 @@
       "chatable_type": "App\\Models\\Channel",
       "channel_id": 1209488,
       "created_at": "2023-02-24T23:55:59.000000Z",
-      "updated_at": "2023-11-25T02:19:29.000000Z",
+      "updated_at": "2024-08-26T06:26:29.000000Z",
       "chat_mode_old": "public",
       "chat_mode": "followers_only",
-      "slow_mode": false,
+      "slow_mode": true,
       "chatable_id": 1209488,
       "followers_mode": true,
       "subscribers_mode": false,
       "emotes_mode": false,
-      "message_interval": 6,
+      "message_interval": 1,
       "following_min_duration": 0
     }
   },
@@ -203,7 +248,7 @@
     "user_id": 25682,
     "slug": "invalidusername",
     "is_banned": false,
-    "playback_url": "?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJFUzM4NCJ9.eyJhd3M6Y2hhbm5lbC1hcm4iOm51bGwsImF3czphY2Nlc3MtY29udHJvbC1hbGxvdy1vcmlnaW4iOiJodHRwczovL2tpY2suY29tLGh0dHBzOi8vcGxheWVyLmtpY2suY29tLGh0dHBzOi8vYWRtaW4ua2ljay5jb20saHR0cHM6Ly93d3cuZ3N0YXRpYy5jb20iLCJhd3M6c3RyaWN0LW9yaWdpbi1lbmZvcmNlbWVudCI6ZmFsc2UsImV4cCI6MTcwMTAxNTg2OH0.Qc9sM3lnv39wvKT0wvYBqw9i8e-Vs0BJ3DjI4rhDO6Ywr_Hgd4fCeXARvLUt5dKEszXJE3mmJPf7PF7aOYXE2q9MKS4iLkq6wnjJwJkttyF0qsBidonZnue0f_ZdpKzz",
+    "playback_url": "https://fa723fc1b171.us-west-2.playback.live-video.net/api/video/v1/us-west-2.196233775518.channel.a8Tn9O3zEMhB.m3u8?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJFUzM4NCJ9.eyJhd3M6Y2hhbm5lbC1hcm4iOiJhcm46YXdzOml2czp1cy13ZXN0LTI6MTk2MjMzNzc1NTE4OmNoYW5uZWwvYThUbjlPM3pFTWhCIiwiYXdzOmFjY2Vzcy1jb250cm9sLWFsbG93LW9yaWdpbiI6Imh0dHBzOi8va2ljay5jb20saHR0cHM6Ly93d3cuZ3N0YXRpYy5jb20saHR0cHM6Ly8qLmtpY2subGl2ZSxodHRwczovL3BsYXllci5raWNrLmNvbSxodHRwczovL2FkbWluLmtpY2suY29tLGh0dHBzOi8vYmV0YS5raWNrLmNvbSxodHRwczovL25leHQua2ljay5jb20iLCJhd3M6c3RyaWN0LW9yaWdpbi1lbmZvcmNlbWVudCI6ZmFsc2UsImV4cCI6MTcyNDY5NTc0OH0.cl3m5tiLwwlHRa2tJpu6RHu9m9VX5ObDkg7Xc7Jz01er0tHi35AMfW7DYgQ6c8bmaaj_cSQB5g-r1uC9OINKToTeMJUaNfStIkRvBihFLdlqXAktL1R8oH5S2D1IC7q0",
     "vod_enabled": true,
     "subscription_enabled": false,
     "followers_count": 2,
